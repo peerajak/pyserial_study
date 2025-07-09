@@ -1,1 +1,0 @@
-/usr/bin/c++ CMakeFiles/libserial_script1.dir/src/libserial_script1.cpp.o -o libserial_script1  -L/usr/lib/x86_64-linux-gnu -lserial 

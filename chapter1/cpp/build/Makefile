@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/peerajak/MyRobotics/pyserial/chapter1/cpp
+CMAKE_SOURCE_DIR = /home/peerajak/MyRobotics/pyserial_study/chapter1/cpp
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/peerajak/MyRobotics/pyserial/chapter1/cpp/build
+CMAKE_BINARY_DIR = /home/peerajak/MyRobotics/pyserial_study/chapter1/cpp/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/peerajak/MyRobotics/pyserial/chapter1/cpp/build/CMakeFiles /home/peerajak/MyRobotics/pyserial/chapter1/cpp/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/peerajak/MyRobotics/pyserial_study/chapter1/cpp/build/CMakeFiles /home/peerajak/MyRobotics/pyserial_study/chapter1/cpp/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/peerajak/MyRobotics/pyserial/chapter1/cpp/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/peerajak/MyRobotics/pyserial_study/chapter1/cpp/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -117,41 +117,189 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named libserial_script1
+# Target rules for targets named serial_port_read
 
 # Build rule for target.
-libserial_script1: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libserial_script1
-.PHONY : libserial_script1
+serial_port_read: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 serial_port_read
+.PHONY : serial_port_read
 
 # fast build rule for target.
-libserial_script1/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libserial_script1.dir/build.make CMakeFiles/libserial_script1.dir/build
-.PHONY : libserial_script1/fast
+serial_port_read/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/serial_port_read.dir/build.make CMakeFiles/serial_port_read.dir/build
+.PHONY : serial_port_read/fast
 
-src/libserial_script1.o: src/libserial_script1.cpp.o
-.PHONY : src/libserial_script1.o
+#=============================================================================
+# Target rules for targets named 0_arduino_to_raspberrypi
+
+# Build rule for target.
+0_arduino_to_raspberrypi: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 0_arduino_to_raspberrypi
+.PHONY : 0_arduino_to_raspberrypi
+
+# fast build rule for target.
+0_arduino_to_raspberrypi/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/0_arduino_to_raspberrypi.dir/build.make CMakeFiles/0_arduino_to_raspberrypi.dir/build
+.PHONY : 0_arduino_to_raspberrypi/fast
+
+#=============================================================================
+# Target rules for targets named serial_port_write
+
+# Build rule for target.
+serial_port_write: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 serial_port_write
+.PHONY : serial_port_write
+
+# fast build rule for target.
+serial_port_write/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/serial_port_write.dir/build.make CMakeFiles/serial_port_write.dir/build
+.PHONY : serial_port_write/fast
+
+#=============================================================================
+# Target rules for targets named 1_raspberrypi_to_arduino
+
+# Build rule for target.
+1_raspberrypi_to_arduino: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 1_raspberrypi_to_arduino
+.PHONY : 1_raspberrypi_to_arduino
+
+# fast build rule for target.
+1_raspberrypi_to_arduino/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/1_raspberrypi_to_arduino.dir/build.make CMakeFiles/1_raspberrypi_to_arduino.dir/build
+.PHONY : 1_raspberrypi_to_arduino/fast
+
+#=============================================================================
+# Target rules for targets named 2_bidirectional
+
+# Build rule for target.
+2_bidirectional: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 2_bidirectional
+.PHONY : 2_bidirectional
+
+# fast build rule for target.
+2_bidirectional/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/2_bidirectional.dir/build.make CMakeFiles/2_bidirectional.dir/build
+.PHONY : 2_bidirectional/fast
+
+src/0_arduino_to_raspberrypi.o: src/0_arduino_to_raspberrypi.cpp.o
+.PHONY : src/0_arduino_to_raspberrypi.o
 
 # target to build an object file
-src/libserial_script1.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libserial_script1.dir/build.make CMakeFiles/libserial_script1.dir/src/libserial_script1.cpp.o
-.PHONY : src/libserial_script1.cpp.o
+src/0_arduino_to_raspberrypi.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/0_arduino_to_raspberrypi.dir/build.make CMakeFiles/0_arduino_to_raspberrypi.dir/src/0_arduino_to_raspberrypi.cpp.o
+.PHONY : src/0_arduino_to_raspberrypi.cpp.o
 
-src/libserial_script1.i: src/libserial_script1.cpp.i
-.PHONY : src/libserial_script1.i
+src/0_arduino_to_raspberrypi.i: src/0_arduino_to_raspberrypi.cpp.i
+.PHONY : src/0_arduino_to_raspberrypi.i
 
 # target to preprocess a source file
-src/libserial_script1.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libserial_script1.dir/build.make CMakeFiles/libserial_script1.dir/src/libserial_script1.cpp.i
-.PHONY : src/libserial_script1.cpp.i
+src/0_arduino_to_raspberrypi.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/0_arduino_to_raspberrypi.dir/build.make CMakeFiles/0_arduino_to_raspberrypi.dir/src/0_arduino_to_raspberrypi.cpp.i
+.PHONY : src/0_arduino_to_raspberrypi.cpp.i
 
-src/libserial_script1.s: src/libserial_script1.cpp.s
-.PHONY : src/libserial_script1.s
+src/0_arduino_to_raspberrypi.s: src/0_arduino_to_raspberrypi.cpp.s
+.PHONY : src/0_arduino_to_raspberrypi.s
 
 # target to generate assembly for a file
-src/libserial_script1.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libserial_script1.dir/build.make CMakeFiles/libserial_script1.dir/src/libserial_script1.cpp.s
-.PHONY : src/libserial_script1.cpp.s
+src/0_arduino_to_raspberrypi.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/0_arduino_to_raspberrypi.dir/build.make CMakeFiles/0_arduino_to_raspberrypi.dir/src/0_arduino_to_raspberrypi.cpp.s
+.PHONY : src/0_arduino_to_raspberrypi.cpp.s
+
+src/1_raspberrypi_to_arduino.o: src/1_raspberrypi_to_arduino.cpp.o
+.PHONY : src/1_raspberrypi_to_arduino.o
+
+# target to build an object file
+src/1_raspberrypi_to_arduino.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/1_raspberrypi_to_arduino.dir/build.make CMakeFiles/1_raspberrypi_to_arduino.dir/src/1_raspberrypi_to_arduino.cpp.o
+.PHONY : src/1_raspberrypi_to_arduino.cpp.o
+
+src/1_raspberrypi_to_arduino.i: src/1_raspberrypi_to_arduino.cpp.i
+.PHONY : src/1_raspberrypi_to_arduino.i
+
+# target to preprocess a source file
+src/1_raspberrypi_to_arduino.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/1_raspberrypi_to_arduino.dir/build.make CMakeFiles/1_raspberrypi_to_arduino.dir/src/1_raspberrypi_to_arduino.cpp.i
+.PHONY : src/1_raspberrypi_to_arduino.cpp.i
+
+src/1_raspberrypi_to_arduino.s: src/1_raspberrypi_to_arduino.cpp.s
+.PHONY : src/1_raspberrypi_to_arduino.s
+
+# target to generate assembly for a file
+src/1_raspberrypi_to_arduino.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/1_raspberrypi_to_arduino.dir/build.make CMakeFiles/1_raspberrypi_to_arduino.dir/src/1_raspberrypi_to_arduino.cpp.s
+.PHONY : src/1_raspberrypi_to_arduino.cpp.s
+
+src/2_bidirectional.o: src/2_bidirectional.cpp.o
+.PHONY : src/2_bidirectional.o
+
+# target to build an object file
+src/2_bidirectional.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/2_bidirectional.dir/build.make CMakeFiles/2_bidirectional.dir/src/2_bidirectional.cpp.o
+.PHONY : src/2_bidirectional.cpp.o
+
+src/2_bidirectional.i: src/2_bidirectional.cpp.i
+.PHONY : src/2_bidirectional.i
+
+# target to preprocess a source file
+src/2_bidirectional.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/2_bidirectional.dir/build.make CMakeFiles/2_bidirectional.dir/src/2_bidirectional.cpp.i
+.PHONY : src/2_bidirectional.cpp.i
+
+src/2_bidirectional.s: src/2_bidirectional.cpp.s
+.PHONY : src/2_bidirectional.s
+
+# target to generate assembly for a file
+src/2_bidirectional.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/2_bidirectional.dir/build.make CMakeFiles/2_bidirectional.dir/src/2_bidirectional.cpp.s
+.PHONY : src/2_bidirectional.cpp.s
+
+src/serial_port_read.o: src/serial_port_read.cpp.o
+.PHONY : src/serial_port_read.o
+
+# target to build an object file
+src/serial_port_read.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/serial_port_read.dir/build.make CMakeFiles/serial_port_read.dir/src/serial_port_read.cpp.o
+.PHONY : src/serial_port_read.cpp.o
+
+src/serial_port_read.i: src/serial_port_read.cpp.i
+.PHONY : src/serial_port_read.i
+
+# target to preprocess a source file
+src/serial_port_read.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/serial_port_read.dir/build.make CMakeFiles/serial_port_read.dir/src/serial_port_read.cpp.i
+.PHONY : src/serial_port_read.cpp.i
+
+src/serial_port_read.s: src/serial_port_read.cpp.s
+.PHONY : src/serial_port_read.s
+
+# target to generate assembly for a file
+src/serial_port_read.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/serial_port_read.dir/build.make CMakeFiles/serial_port_read.dir/src/serial_port_read.cpp.s
+.PHONY : src/serial_port_read.cpp.s
+
+src/serial_port_write.o: src/serial_port_write.cpp.o
+.PHONY : src/serial_port_write.o
+
+# target to build an object file
+src/serial_port_write.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/serial_port_write.dir/build.make CMakeFiles/serial_port_write.dir/src/serial_port_write.cpp.o
+.PHONY : src/serial_port_write.cpp.o
+
+src/serial_port_write.i: src/serial_port_write.cpp.i
+.PHONY : src/serial_port_write.i
+
+# target to preprocess a source file
+src/serial_port_write.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/serial_port_write.dir/build.make CMakeFiles/serial_port_write.dir/src/serial_port_write.cpp.i
+.PHONY : src/serial_port_write.cpp.i
+
+src/serial_port_write.s: src/serial_port_write.cpp.s
+.PHONY : src/serial_port_write.s
+
+# target to generate assembly for a file
+src/serial_port_write.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/serial_port_write.dir/build.make CMakeFiles/serial_port_write.dir/src/serial_port_write.cpp.s
+.PHONY : src/serial_port_write.cpp.s
 
 # Help Target
 help:
@@ -161,10 +309,26 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... libserial_script1"
-	@echo "... src/libserial_script1.o"
-	@echo "... src/libserial_script1.i"
-	@echo "... src/libserial_script1.s"
+	@echo "... 0_arduino_to_raspberrypi"
+	@echo "... 1_raspberrypi_to_arduino"
+	@echo "... 2_bidirectional"
+	@echo "... serial_port_read"
+	@echo "... serial_port_write"
+	@echo "... src/0_arduino_to_raspberrypi.o"
+	@echo "... src/0_arduino_to_raspberrypi.i"
+	@echo "... src/0_arduino_to_raspberrypi.s"
+	@echo "... src/1_raspberrypi_to_arduino.o"
+	@echo "... src/1_raspberrypi_to_arduino.i"
+	@echo "... src/1_raspberrypi_to_arduino.s"
+	@echo "... src/2_bidirectional.o"
+	@echo "... src/2_bidirectional.i"
+	@echo "... src/2_bidirectional.s"
+	@echo "... src/serial_port_read.o"
+	@echo "... src/serial_port_read.i"
+	@echo "... src/serial_port_read.s"
+	@echo "... src/serial_port_write.o"
+	@echo "... src/serial_port_write.i"
+	@echo "... src/serial_port_write.s"
 .PHONY : help
 
 

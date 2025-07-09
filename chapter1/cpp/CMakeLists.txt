@@ -16,15 +16,26 @@ add_executable(serial_port_read
 target_link_libraries(serial_port_read PRIVATE
 "${SERIAL_LDFLAGS}")
 
+add_executable(0_arduino_to_raspberrypi
+    src/0_arduino_to_raspberrypi.cpp )
+target_link_libraries(0_arduino_to_raspberrypi PRIVATE
+"${SERIAL_LDFLAGS}")
+
 
 add_executable(serial_port_write
     src/serial_port_write.cpp )
 target_link_libraries(serial_port_write PRIVATE
 "${SERIAL_LDFLAGS}")
 
-add_executable(bidirectional
-    src/bidirectional.cpp )
-target_link_libraries(bidirectional PRIVATE
+
+add_executable(1_raspberrypi_to_arduino
+    src/1_raspberrypi_to_arduino.cpp )
+target_link_libraries(1_raspberrypi_to_arduino PRIVATE
+"${SERIAL_LDFLAGS}")
+
+add_executable(2_bidirectional
+    src/2_bidirectional.cpp )
+target_link_libraries(2_bidirectional PRIVATE
 "${SERIAL_LDFLAGS}")
 
 

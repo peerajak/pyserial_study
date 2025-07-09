@@ -121,5 +121,9 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/libserial_script1.dir/DependInfo.cmake"
+  "CMakeFiles/serial_port_read.dir/DependInfo.cmake"
+  "CMakeFiles/0_arduino_to_raspberrypi.dir/DependInfo.cmake"
+  "CMakeFiles/serial_port_write.dir/DependInfo.cmake"
+  "CMakeFiles/1_raspberrypi_to_arduino.dir/DependInfo.cmake"
+  "CMakeFiles/2_bidirectional.dir/DependInfo.cmake"
   )

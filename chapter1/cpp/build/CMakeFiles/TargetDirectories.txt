@@ -1,3 +1,7 @@
-/home/peerajak/MyRobotics/pyserial/chapter1/cpp/build/CMakeFiles/libserial_script1.dir
-/home/peerajak/MyRobotics/pyserial/chapter1/cpp/build/CMakeFiles/edit_cache.dir
-/home/peerajak/MyRobotics/pyserial/chapter1/cpp/build/CMakeFiles/rebuild_cache.dir
+/home/peerajak/MyRobotics/pyserial_study/chapter1/cpp/build/CMakeFiles/serial_port_read.dir
+/home/peerajak/MyRobotics/pyserial_study/chapter1/cpp/build/CMakeFiles/0_arduino_to_raspberrypi.dir
+/home/peerajak/MyRobotics/pyserial_study/chapter1/cpp/build/CMakeFiles/serial_port_write.dir
+/home/peerajak/MyRobotics/pyserial_study/chapter1/cpp/build/CMakeFiles/1_raspberrypi_to_arduino.dir
+/home/peerajak/MyRobotics/pyserial_study/chapter1/cpp/build/CMakeFiles/2_bidirectional.dir
+/home/peerajak/MyRobotics/pyserial_study/chapter1/cpp/build/CMakeFiles/edit_cache.dir
+/home/peerajak/MyRobotics/pyserial_study/chapter1/cpp/build/CMakeFiles/rebuild_cache.dir
