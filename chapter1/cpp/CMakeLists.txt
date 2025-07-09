@@ -11,16 +11,20 @@ pkg_check_modules(SERIAL libserial)
 
 
 
-add_executable(libserial_script1
-    src/libserial_script1.cpp )
+add_executable(serial_port_read
+    src/serial_port_read.cpp )
+target_link_libraries(serial_port_read PRIVATE
+"${SERIAL_LDFLAGS}")
 
 
+add_executable(serial_port_write
+    src/serial_port_write.cpp )
+target_link_libraries(serial_port_write PRIVATE
+"${SERIAL_LDFLAGS}")
 
-#target_include_directories(libserial_script1 PUBLIC
-#"${SERIAL_INCLUDE_DIRS}"
-#)
-
-target_link_libraries(libserial_script1 PRIVATE
+add_executable(bidirectional
+    src/bidirectional.cpp )
+target_link_libraries(bidirectional PRIVATE
 "${SERIAL_LDFLAGS}")
 
 
