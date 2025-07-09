@@ -1,0 +1,3 @@
+/home/peerajak/MyRobotics/pyserial/chapter1/cpp/build/CMakeFiles/libserial_script1.dir
+/home/peerajak/MyRobotics/pyserial/chapter1/cpp/build/CMakeFiles/edit_cache.dir
+/home/peerajak/MyRobotics/pyserial/chapter1/cpp/build/CMakeFiles/rebuild_cache.dir
