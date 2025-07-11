@@ -3,6 +3,7 @@
 In this project, I want to study how to use pyserial python and C++ to do serial communication between computer/raspberry pi with linux ubuntu OS, to arduino using serial communication.
 
 I would like to see the blocking characteristic of read() function, and how to avoid or mitigate it.
+- use timeout, check 2_bidirectional.cpp
 
 I would like to know how to log the message sent to arduino, since serial port is already used, the normal arudino's serial monitor cannot be used.
 - The answer is to use arduino LCD to log.

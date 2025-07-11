@@ -45,26 +45,27 @@ int main(int argc, char** argv)
         std::stringstream message_stream;
         message_stream << s;
 
-        // TODO 
 
-
-        while ( !serial_port.IsDataAvailable() ){
-            std::cout<< serial_port.IsDataAvailable();
-            try{
-                serial_port.Write(message_stream.str());
-                std::cout<<"WRITING TO ARDUINO:"<<message_stream.str();
-            }
-            catch (...){
-                std::cerr<< "Something went wrong while sending the message "
-                                        << message_stream.str() << " to the port " << SERIAL_PORT_2;
-                return 1;
-            }
-            usleep(serail_waiting_time_quantum);
+        try{
+            serial_port.Write(message_stream.str());
+            std::cout<<"WRITING TO ARDUINO:"<<message_stream.str();
         }
+        catch (...){
+            std::cerr<< "Something went wrong while sending the message "
+                                    << message_stream.str() << " to the port " << SERIAL_PORT_2;
+            return 1;
+        }
+
+        // while ( !serial_port.IsDataAvailable() ){
+        //     std::cout<< "serial_port.IsDataAvailable()==" <<serial_port.IsDataAvailable() << std::endl;
+
+        //     usleep(serail_waiting_time_quantum);
+        // }
+        std::cout<< "serial_port.IsDataAvailable()==" <<serial_port.IsDataAvailable() << std::endl;
         std::string message;
         try{
             std::cout <<"BEFORE READLINE"<<std::endl;
-            serial_port.ReadLine(message);
+            serial_port.ReadLine(message,'\n',ms_timeout);
             std::cout <<"RETRUN FROM ARDUINO:"<< message << std::flush ;
         }
         catch (const ReadTimeout&)
