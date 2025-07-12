@@ -115,17 +115,22 @@ cd pyserial_study/chapter1/cpp/build
 expected result on computer terminal 
 
 ```
-0WRITING TO ARDUINO:rasp cpp string
-0WRITING TO ARDUINO:rasp cpp string
-0WRITING TO ARDUINO:rasp cpp string
-0WRITING TO ARDUINO:rasp cpp string
-0WRITING TO ARDUINO:rasp cpp string
+Writing to the serial port.
+WRITING TO ARDUINO:rasp cpp string
+serial_port.IsDataAvailable()==0
 BEFORE READLINE
-RETRUN FROM ARDUINO:rasp cpp string 13
+RETRUN FROM ARDUINO:rasp cpp string 0
+WRITING TO ARDUINO:rasp cpp string
+serial_port.IsDataAvailable()==0
 BEFORE READLINE
-RETRUN FROM ARDUINO:rasp cpp string 14
+RETRUN FROM ARDUINO:rasp cpp string 1
+WRITING TO ARDUINO:rasp cpp string
+serial_port.IsDataAvailable()==0
 BEFORE READLINE
-RETRUN FROM ARDUINO:rasp cpp string 15
+RETRUN FROM ARDUINO:rasp cpp string 2
+WRITING TO ARDUINO:rasp cpp string
+serial_port.IsDataAvailable()==0
+BEFORE READLINE
 ```
 printed in 1Hz.
 
