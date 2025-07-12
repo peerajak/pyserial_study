@@ -29,7 +29,7 @@ int main(int argc, char** argv)
         std::cerr << "The serial port did not open correctly." << std::endl ;
         return EXIT_FAILURE ;
     }
-
+    sleep(2);
     serial_port.SetBaudRate(BaudRate::BAUD_115200) ;
     serial_port.SetCharacterSize(CharacterSize::CHAR_SIZE_8) ;
     serial_port.SetFlowControl(FlowControl::FLOW_CONTROL_NONE) ;
@@ -44,7 +44,11 @@ int main(int argc, char** argv)
         std::string s("rasp cpp string\n");
         std::stringstream message_stream;
         message_stream << s;
+        // while ( !serial_port.IsDataAvailable() ){
+        //     std::cout<< "serial_port.IsDataAvailable()==" <<serial_port.IsDataAvailable() << std::endl;
 
+        //     usleep(serail_waiting_time_quantum);
+        // }
 
         try{
             serial_port.Write(message_stream.str());
@@ -56,11 +60,7 @@ int main(int argc, char** argv)
             return 1;
         }
 
-        // while ( !serial_port.IsDataAvailable() ){
-        //     std::cout<< "serial_port.IsDataAvailable()==" <<serial_port.IsDataAvailable() << std::endl;
 
-        //     usleep(serail_waiting_time_quantum);
-        // }
         std::cout<< "serial_port.IsDataAvailable()==" <<serial_port.IsDataAvailable() << std::endl;
         std::string message;
         try{

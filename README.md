@@ -4,6 +4,8 @@ In this project, I want to study how to use pyserial python and C++ to do serial
 
 I would like to see the blocking characteristic of read() function, and how to avoid or mitigate it.
 - use timeout, check 2_bidirectional.cpp
+- need to sleep for 2 seconds after Serial.open() to wait for serail port to be really ready to use. Otherwise, could find some strange behavior in 2_direction.py/cpp like
+data sent (to not-ready serial), and no data received back (because the data were sent to a not-ready serial).
 
 I would like to know how to log the message sent to arduino, since serial port is already used, the normal arudino's serial monitor cannot be used.
 - The answer is to use arduino LCD to log.
